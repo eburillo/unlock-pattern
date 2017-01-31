@@ -1,0 +1,12 @@
+{
+  "intro_message": "Enter pattern to unblock",
+  "correct": "Correct, app unlocked.",
+  "incorrect": "Incorrect, try again.",
+  "new_pattern": "Introduce new pattern:",
+  "valid_pattern": "Please, introduce a valid pattern",
+  "confirm_pattern": "Confirm new pattern:",
+  "saved_pattern": "Pattern saved",
+  "new_pattern_failed": "ERROR: The patterns don't match",
+  "locked": "Locked",
+  "unlocked": "Unlocked"
+}

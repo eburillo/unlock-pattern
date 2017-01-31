@@ -1,0 +1,102 @@
+/*** Pattern component ***/
+
+.elem {
+  position: relative;
+  width: $circle-size;
+  height: $circle-size;
+  float: left;
+  margin-right: $circle-spacing;
+  margin-bottom: $circle-spacing;
+  border-radius: 50%;
+  background-color: rgba($gray-lighter, 0.4);
+  border: 2px solid rgba($gray-darker, 0.2);
+  &:before{
+    content: "";
+    position: absolute;
+    width: $point-size;
+    height: $point-size;
+    top: 50%;
+    left: 50%;
+    margin-top: -$point-size/2;
+    margin-left: -$point-size/2;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 1px solid rgba($gray-darker, 0.2);
+  }
+  &:nth-child(3n + 3) {
+    margin-right: 0;
+  }
+  &.selected {
+    border-color: $gray;
+    background-color: rgba($gray, 0.2);
+  }
+  &.fail {
+    border-color: $red;
+    background-color: rgba($red, 0.2);
+  }
+  &.correct {
+    border-color: $green;
+    background-color: rgba($green, 0.2);
+  }
+  &.modified {
+      border-color: $light-blue;
+      background-color: rgba($light-blue, 0.2);
+  }
+}
+
+/*** Info message ***/
+
+.info-message {
+  margin: 20px 0;
+  height: 20px;
+  line-height: 20px;
+}
+
+/*** Primary button ***/
+
+.primary-button {
+  background-color: $gray-light;
+  color: $gray-lighter;
+  border-color: $gray;
+  display: none;
+}
+
+/*** Secondary button ***/
+
+.secondary-button {
+  background-color: $gray-lighter;
+  color: $gray;
+  border-color: $gray-dark;
+  display: none;
+}
+
+/*** Buttons modifiers ***/
+
+.unlocked {
+  .primary-button {
+    display: inline-block;
+  }
+  &.change {
+    .primary-button {
+      display: none;
+    }
+    .secondary-button {
+      display: inline-block;
+    }
+  }
+}
+
+/*** Reset button ***/
+
+.reset {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 15px;
+  right: 30px;
+  display: none;
+}
+
+.pattern-saved .reset {
+  display: block;
+}

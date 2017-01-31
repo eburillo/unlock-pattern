@@ -1,0 +1,19 @@
+.app {
+  text-align: center;
+}
+
+.display {
+  position: relative;
+  width: $max-width;
+  height: $max-height;
+  margin: 0 auto;
+  border: 2px solid $gray-light;
+  background-color: rgba($gray-lighter, 0.7);
+}
+
+.wrapper {
+  width: 260px;
+  margin: 0 auto 15px;
+  padding-top: 30px;
+  overflow: hidden;
+}
